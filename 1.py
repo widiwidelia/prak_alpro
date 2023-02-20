@@ -51,13 +51,40 @@
 #  else :
 #    return False
 
-nama1 = str(input("Masukkan nama 1 = "))
-nama2 = str(input("Masukkan nama 2 = "))
-nama3 = str(input("Masukkan nama 3 = "))
+#nama1 = str(input("Masukkan nama 1 = "))
+#nama2 = str(input("Masukkan nama 2 = "))
+#nama3 = str(input("Masukkan nama 3 = "))
 
-if len(nama1) >= len(nama2) and len(nama1) >= len(nama2):
-    print("Nama yang paling panjang adalah",nama1)
-elif len(nama2) >= len(nama1) and len(nama2) >= len(nama3):
-    print("Nama yang paling panjang adalah",nama2)
+#if len(nama1) >= len(nama2) and len(nama1) >= len(nama2):
+#    print("Nama yang paling panjang adalah",nama1)
+#elif len(nama2) >= len(nama1) and len(nama2) >= len(nama3):
+#    print("Nama yang paling panjang adalah",nama2)
+#else :
+#    print("Nama yang paling panjang adalah",nama3)
+
+#a = int(input("Masukkan a = "))
+#b = int(input("Masukkan b = "))
+#c = int(input("Masukkan c = "))
+
+#if b == 13:
+#    print(a)
+#elif c == 13:
+#    print(a + b)
+#elif a == 13:
+#    print("0")
+#else :
+#    print(a + b + c)
+
+ubin_1 = int(input("Jumlah ubin 1 meter = "))
+ubin_5 = int(input("Jumlah ubin 5 meter = "))
+panjang = int(input("Panjang yang akan ditutupi ubin = "))
+
+if (ubin_1 + ubin_5 * 5) >= panjang: #cek jumlah ubinnya cukup atau tidak
+    if panjang % 5 == 0 and panjang // 5 <= ubin_5:
+        print("Bisa")
+    elif panjang % 5 <= ubin_1:
+        print("Bisa")
+    else :
+        print("Tidak bisa")
 else :
-    print("Nama yang paling panjang adalah",nama3)
+    print("Tidak bisa")    
