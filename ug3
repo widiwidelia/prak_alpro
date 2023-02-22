@@ -1,0 +1,88 @@
+#input
+jarak = int(input("Jarak = "))
+batas = int(input("batas_a = "))
+nilai = int(input("nilai = "))
+
+#proses
+batas_2 = batas - jarak
+batas_3 = batas_2 - jarak
+batas_4 = batas_3 - jarak
+batas_5 = batas_4 - jarak
+batas_6 = batas_5 - jarak
+batas_7 = batas_6 - jarak
+batas_8 = batas_7 - jarak
+batas_9 = batas_8 - jarak
+
+#output
+if nilai >= batas:
+    print("Maka jawabannya adalah A")
+elif batas_2 <= nilai < batas:
+    print("Maka jawabannya adalah A-")
+elif batas_3 <= nilai < batas_2:
+    print("Maka jawabannya adalah B+")
+elif batas_4 <= nilai < batas_3:
+    print("Maka jawabannya adalah B")
+elif(batas_5 <= nilai < batas_4):
+    print("Maka jawabannya adalah B-")
+elif(batas_6 <= nilai < batas_5):
+    print("Maka jawabannya adalah C+")
+elif(batas_7 <= nilai < batas_6):
+    print("Maka jawabannya adalah C")
+elif(batas_8 <= nilai < batas_7):
+    print("Maka jawabannya adalah C-")
+elif(batas_9 <= nilai < batas_8):
+    print("Maka jawabannya adalah D")
+else:
+    print("Maka jawabannya adalah E")
+    
+ #input
+dadu_1 = int(input("dadu1 = "))
+dadu_2 = int(input("dadu2 = "))
+dadu_3 = int(input("dadu3 = "))
+
+#proses
+total = dadu_1 + dadu_2 + dadu_3
+
+#output
+if total == 18:
+    print("Maka hasilnya adalah Royal")
+elif dadu_1 == dadu_2 and dadu_1 == dadu_3 and dadu_2 == dadu_3:
+    print("Maka hasilnya adalah Triple")
+elif dadu_1 == 4 and dadu_2 == 5 and dadu_3 == 6:
+    print("Maka hasilnya adalah Flush")
+elif (dadu_1 == dadu_2 and dadu_1 != dadu_3):
+    print("Maka hasilnya adalah Double")
+elif (dadu_1 == dadu_3 and dadu_1 != dadu_2):
+    print("Maka hasilnya adalah Double")
+elif (dadu_2 == dadu_3 and dadu_2 != dadu_1):
+    print("Maka hasilnya adalah Double")
+elif dadu_1 != dadu_2 and dadu_2 != dadu_3 and dadu_1 != dadu_3:
+    print("Maka hasilnya adalah Single")
+    
+#input
+p_1 = int(input("p1 = "))
+p_2 = int(input("p2 = "))
+p_3 = int(input("p3 = "))
+
+#proses (untuk selisih)
+p1 = p_1 - 21
+p2 = p_2 - 21
+p3 = p_3 - 21
+
+#output
+if p_1 == 21:
+    print("maka pemenangnya adalah p1")
+elif p_2 == 21:
+    print("maka pemenangnya adalah p2")
+elif p_3 == 21:
+    print("maka pemenangnya adalah p3")
+elif p_1 > 21 and p_2 > 21 and p_3 > 21:
+    print("maka tidak ada pemenang")
+elif p_1 != 21 and p_2 != 21 and p_3 != 21 and (p_1 == p_2 or p_2 == p_3 or p_1 == p_3):
+    print("maka tidak ada pemenang")
+elif p_1 != 21 and p_2 != 21 and p_3 != 21 and (abs(p1) < abs(p2) and abs(p1) < abs(p3)):
+    print("maka pemenangnya adalah p1")
+elif p_1 != 21 and p_2 != 21 and p_3 != 21 and (abs(p2) < abs(p1) and abs(p2) < abs(p3)):
+    print("maka pemenangnya adalah p2")
+elif p_1 != 21 and p_2 != 21 and p_3 != 21 and (abs(p3) < abs(p1) and abs(p3) < abs(p2)):
+    print("maka pemenangnya adalah p3")
